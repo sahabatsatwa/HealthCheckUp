@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semi"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteY="249dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnMasuk"
+        android:layout_width="146dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/back_button"
+        android:text="Masuk"
+        android:textColor="#EEEEED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <ImageView
+        android:id="@+id/username"
+        android:layout_width="432dp"
+        android:layout_height="217dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:background="@drawable/username"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="335dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/montserrat_semi"
+        android:inputType="textPersonName"
+        android:text="Username"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        app:layout_constraintEnd_toEndOf="@+id/etPassword"
+        app:layout_constraintStart_toStartOf="@+id/etPassword"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/password"
+        android:layout_width="432dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="229dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:layout_marginBottom="292dp"
+        android:fontFamily="@font/montserrat_semi"
+        android:inputType="textPassword"
+        android:text="Password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:layout_width="146dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginLeft="216dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/back_button"
+        android:text="Daftar"
+        android:textColor="#EEEEED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin"
+        app:layout_constraintVertical_bias="0.97" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

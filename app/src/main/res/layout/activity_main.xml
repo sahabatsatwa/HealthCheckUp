@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.healthcheckup.MainActivity">
+
+    <Button
+        android:text="ON/OFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnONOFF"/>
+
+    <Button
+        android:text="Enable Discoverable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDiscoverable_on_off"
+        android:onClick="btnEnableDisable_Discoverable"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFindUnpairedDevices"
+        android:text="Discover"
+        android:onClick="btnDiscover"/>
+
+    <ListView
+        android:id="@+id/lvNewDevices"
+        android:layout_width="match_parent"
+        android:layout_height="616dp"
+        android:layout_below="@+id/btnFindUnpairedDevices"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:id="@+id/btnMonitoring"
+        android:layout_width="127dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/lvNewDevices"
+        android:layout_marginTop="109dp"
+        android:background="@drawable/button_monitoring" />
+
+</RelativeLayout>

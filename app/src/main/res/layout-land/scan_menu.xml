@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scan_menu"
+    tools:context=".ScanMenu">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backgroud_scan"/>
+
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="36dp"
+        android:background="@drawable/button_back"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="347dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="151dp"
+        android:layout_height="33dp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="108dp"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat"
+        android:text="Nama Pasien"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
